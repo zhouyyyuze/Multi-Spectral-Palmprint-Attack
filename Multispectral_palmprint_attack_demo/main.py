@@ -1,14 +1,15 @@
 import my_multi_dataloader
-from matplotlib import pyplot as plt
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
 import My_DGCCA_PGD
-from torchvision import transforms
 import pytorch_ssim
 import time
 import DS_Proj_Matrix
+
 from DGCCA_Train import DGCCA_train
+from torchvision import transforms
+from torch.utils.data import DataLoader
+from matplotlib import pyplot as plt
 
 torch.set_default_tensor_type(torch.DoubleTensor)
 
