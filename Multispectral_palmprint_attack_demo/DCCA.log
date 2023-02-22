@@ -1,0 +1,277 @@
+[ INFO : 2023-02-21 18:08:41,107 ] - DeepGCCA(
+  (model_list): ModuleList(
+    (0): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2023-02-21 18:08:41,108 ] - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    weight_decay: 1e-05
+)
+[ INFO : 2023-02-21 18:09:10,040 ] - Epoch 1: val_loss improved from 0.0000 to -15.5708, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:09:10,377 ] - Epoch 1/20 - time: 29.27 - training_loss: -15.4136 - val_loss: -15.5708
+[ INFO : 2023-02-21 18:09:36,268 ] - Epoch 2: val_loss improved from -15.5708 to -15.9073, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:09:36,646 ] - Epoch 2/20 - time: 26.27 - training_loss: -15.7349 - val_loss: -15.9073
+[ INFO : 2023-02-21 18:10:02,075 ] - Epoch 3: val_loss improved from -15.9073 to -15.9381, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:10:02,514 ] - Epoch 3/20 - time: 25.87 - training_loss: -15.9294 - val_loss: -15.9381
+[ INFO : 2023-02-21 18:10:27,776 ] - Epoch 4: val_loss improved from -15.9381 to -15.9711, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:10:28,119 ] - Epoch 4/20 - time: 25.60 - training_loss: -16.0701 - val_loss: -15.9711
+[ INFO : 2023-02-21 18:10:53,426 ] - Epoch 5: val_loss improved from -15.9711 to -15.9963, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:10:53,812 ] - Epoch 5/20 - time: 25.69 - training_loss: -16.1851 - val_loss: -15.9963
+[ INFO : 2023-02-21 18:11:19,401 ] - Epoch 6: val_loss improved from -15.9963 to -16.0437, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:11:19,772 ] - Epoch 6/20 - time: 25.96 - training_loss: -16.2807 - val_loss: -16.0437
+[ INFO : 2023-02-21 18:11:44,958 ] - Epoch 7: val_loss improved from -16.0437 to -16.1924, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:11:45,300 ] - Epoch 7/20 - time: 25.53 - training_loss: -16.3575 - val_loss: -16.1924
+[ INFO : 2023-02-21 18:12:10,657 ] - Epoch 8: val_loss did not improve from -16.1924
+[ INFO : 2023-02-21 18:12:10,658 ] - Epoch 8/20 - time: 25.36 - training_loss: -16.4203 - val_loss: -16.1709
+[ INFO : 2023-02-21 18:12:37,084 ] - Epoch 9: val_loss did not improve from -16.1924
+[ INFO : 2023-02-21 18:12:37,084 ] - Epoch 9/20 - time: 26.43 - training_loss: -16.4732 - val_loss: -16.0301
+[ INFO : 2023-02-21 18:13:04,491 ] - Epoch 10: val_loss did not improve from -16.1924
+[ INFO : 2023-02-21 18:13:04,491 ] - Epoch 10/20 - time: 27.41 - training_loss: -16.5194 - val_loss: -16.0666
+[ INFO : 2023-02-21 18:13:30,055 ] - Epoch 11: val_loss did not improve from -16.1924
+[ INFO : 2023-02-21 18:13:30,055 ] - Epoch 11/20 - time: 25.56 - training_loss: -16.5619 - val_loss: -16.0167
+[ INFO : 2023-02-21 18:14:07,606 ] - DeepGCCA(
+  (model_list): ModuleList(
+    (0): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2023-02-21 18:14:07,607 ] - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    weight_decay: 1e-05
+)
+[ INFO : 2023-02-21 18:14:40,625 ] - Epoch 1: val_loss improved from 0.0000 to -15.8014, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:14:40,993 ] - Epoch 1/10 - time: 33.39 - training_loss: -15.5146 - val_loss: -15.8014
+[ INFO : 2023-02-21 18:15:09,624 ] - Epoch 2: val_loss improved from -15.8014 to -15.8941, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:15:09,976 ] - Epoch 2/10 - time: 28.98 - training_loss: -15.8332 - val_loss: -15.8941
+[ INFO : 2023-02-21 18:15:40,547 ] - Epoch 3: val_loss improved from -15.8941 to -15.9469, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:15:41,129 ] - Epoch 3/10 - time: 31.15 - training_loss: -16.0284 - val_loss: -15.9469
+[ INFO : 2023-02-21 18:16:07,597 ] - Epoch 4: val_loss improved from -15.9469 to -16.0892, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:16:07,935 ] - Epoch 4/10 - time: 26.81 - training_loss: -16.1648 - val_loss: -16.0892
+[ INFO : 2023-02-21 18:16:34,750 ] - Epoch 5: val_loss improved from -16.0892 to -16.2093, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 18:16:35,102 ] - Epoch 5/10 - time: 27.17 - training_loss: -16.2708 - val_loss: -16.2093
+[ INFO : 2023-02-21 18:17:00,647 ] - Epoch 6: val_loss did not improve from -16.2093
+[ INFO : 2023-02-21 18:17:00,647 ] - Epoch 6/10 - time: 25.54 - training_loss: -16.3576 - val_loss: -16.1381
+[ INFO : 2023-02-21 18:17:29,350 ] - Epoch 7: val_loss did not improve from -16.2093
+[ INFO : 2023-02-21 18:17:29,350 ] - Epoch 7/10 - time: 28.70 - training_loss: -16.4301 - val_loss: -16.0607
+[ INFO : 2023-02-21 18:17:55,203 ] - Epoch 8: val_loss did not improve from -16.2093
+[ INFO : 2023-02-21 18:17:55,203 ] - Epoch 8/10 - time: 25.85 - training_loss: -16.4907 - val_loss: -16.1375
+[ INFO : 2023-02-21 18:18:20,804 ] - Epoch 9: val_loss did not improve from -16.2093
+[ INFO : 2023-02-21 18:18:20,805 ] - Epoch 9/10 - time: 25.60 - training_loss: -16.5413 - val_loss: -15.9724
+[ INFO : 2023-02-21 18:18:47,133 ] - Epoch 10: val_loss did not improve from -16.2093
+[ INFO : 2023-02-21 18:18:47,134 ] - Epoch 10/10 - time: 26.33 - training_loss: -16.5854 - val_loss: -16.2042
+[ INFO : 2023-02-21 18:18:52,357 ] - loss on validation data: -16.2093
+[ INFO : 2023-02-21 19:06:51,995 ] - DeepGCCA(
+  (model_list): ModuleList(
+    (0): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (1): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+    (2): MlpNet(
+      (layers): ModuleList(
+        (0): Sequential(
+          (0): Linear(in_features=3072, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (1): Sequential(
+          (0): Linear(in_features=1024, out_features=1024, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+        (2): Sequential(
+          (0): Linear(in_features=1024, out_features=256, bias=True)
+          (1): Sigmoid()
+          (2): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=False, track_running_stats=True)
+        )
+      )
+    )
+  )
+)
+[ INFO : 2023-02-21 19:06:51,996 ] - Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.001
+    lr: 0.001
+    maximize: False
+    weight_decay: 1e-05
+)
+[ INFO : 2023-02-21 19:07:19,908 ] - Epoch 1: val_loss improved from 0.0000 to -15.6889, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 19:07:20,267 ] - Epoch 1/10 - time: 28.27 - training_loss: -15.4675 - val_loss: -15.6889
+[ INFO : 2023-02-21 19:07:45,817 ] - Epoch 2: val_loss improved from -15.6889 to -16.0227, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 19:07:46,134 ] - Epoch 2/10 - time: 25.87 - training_loss: -15.7604 - val_loss: -16.0227
+[ INFO : 2023-02-21 19:08:11,780 ] - Epoch 3: val_loss did not improve from -16.0227
+[ INFO : 2023-02-21 19:08:11,780 ] - Epoch 3/10 - time: 25.65 - training_loss: -15.9485 - val_loss: -15.8970
+[ INFO : 2023-02-21 19:08:37,065 ] - Epoch 4: val_loss did not improve from -16.0227
+[ INFO : 2023-02-21 19:08:37,065 ] - Epoch 4/10 - time: 25.28 - training_loss: -16.0864 - val_loss: -15.9795
+[ INFO : 2023-02-21 19:09:02,466 ] - Epoch 5: val_loss did not improve from -16.0227
+[ INFO : 2023-02-21 19:09:02,466 ] - Epoch 5/10 - time: 25.40 - training_loss: -16.1990 - val_loss: -16.0118
+[ INFO : 2023-02-21 19:09:27,866 ] - Epoch 6: val_loss improved from -16.0227 to -16.1210, saving model to ./DGCCA.model
+[ INFO : 2023-02-21 19:09:28,179 ] - Epoch 6/10 - time: 25.71 - training_loss: -16.2880 - val_loss: -16.1210
+[ INFO : 2023-02-21 19:09:53,654 ] - Epoch 7: val_loss did not improve from -16.1210
+[ INFO : 2023-02-21 19:09:53,654 ] - Epoch 7/10 - time: 25.47 - training_loss: -16.3630 - val_loss: -16.0813
+[ INFO : 2023-02-21 19:10:18,919 ] - Epoch 8: val_loss did not improve from -16.1210
+[ INFO : 2023-02-21 19:10:18,920 ] - Epoch 8/10 - time: 25.27 - training_loss: -16.4281 - val_loss: -16.0116
+[ INFO : 2023-02-21 19:10:44,209 ] - Epoch 9: val_loss did not improve from -16.1210
+[ INFO : 2023-02-21 19:10:44,210 ] - Epoch 9/10 - time: 25.29 - training_loss: -16.4846 - val_loss: -16.0027
+[ INFO : 2023-02-21 19:11:10,015 ] - Epoch 10: val_loss did not improve from -16.1210
+[ INFO : 2023-02-21 19:11:10,016 ] - Epoch 10/10 - time: 25.81 - training_loss: -16.5337 - val_loss: -16.0544
+[ INFO : 2023-02-21 19:11:15,107 ] - loss on validation data: -16.1210
