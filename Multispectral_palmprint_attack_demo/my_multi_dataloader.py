@@ -13,9 +13,9 @@ class MyDataset(Dataset):
         self.root = root
         self.resize = resize
         self.mode = mode
-        self.images_1, self.labels_1 = self.load_csv(filename_1)  # csv文件存在 直接读取
-        self.images_2, self.labels_2, = self.load_csv(filename_2)  # csv文件存在 直接读取
-        self.images_3, self.labels_3, = self.load_csv(filename_3)  # csv文件存在 直接读取
+        self.images_1, self.labels_1 = self.load_csv(filename_1)  
+        self.images_2, self.labels_2, = self.load_csv(filename_2) 
+        self.images_3, self.labels_3, = self.load_csv(filename_3)
 
         # randnum = random.randint(0, 100)
         # print("randnum", randnum)
